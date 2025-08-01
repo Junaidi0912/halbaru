@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Seru - Jualan Online</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div id="parallax-bg">
+    <div class="layer layer1"></div>
+    <div class="layer layer2"></div>
+    <div class="layer layer3"></div>
+  </div>
+  <header class="header">
+    <div class="logo">Toko<span>Seru</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Beranda</a></li>
+        <li><a href="#produk" class="nav-link">Produk</a></li>
+        <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="cart" id="cartBtn">
+      <span class="material-icons">shopping_cart</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="animated-title">Selamat Datang di <span>Toko Seru</span></h1>
+      <p class="animated-desc">Belanja produk seru, animasi keren, interaktif, dan diskon menarik setiap hari!</p>
+      <a href="#produk" class="btn-cta">Belanja Sekarang</a>
+    </div>
+    <div class="hero-anim">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+  </section>
+  <section id="produk" class="products">
+    <h2 class="section-title">Produk Unggulan</h2>
+    <div class="product-list">
+      <!-- Produk akan diisi oleh JS -->
+    </div>
+  </section>
+  <section id="testimoni" class="testimonials">
+    <h2 class="section-title">Testimoni Pelanggan</h2>
+    <div class="testi-list">
+      <div class="testi-card animated-card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 1"/>
+        <p>"Belanja di sini serasa di dunia animasi! Produk berkualitas dan tampilan web yang bikin betah."</p>
+        <span>- Siti, Jakarta</span>
+      </div>
+      <div class="testi-card animated-card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User 2"/>
+        <p>"UI-nya interaktif, animasi parallax keren, pengalaman belanja jadi lebih menyenangkan."</p>
+        <span>- Budi, Bandung</span>
+      </div>
+      <div class="testi-card animated-card">
+        <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="User 3"/>
+        <p>"Produk unik, pelayanan cepat, dan keranjang belanja yang mudah digunakan."</p>
+        <span>- Maya, Surabaya</span>
+      </div>
+    </div>
+  </section>
+  <section id="kontak" class="contact">
+    <h2 class="section-title">Kontak Kami</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Nama Anda" required/>
+      <input type="email" placeholder="Email" required/>
+      <textarea placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+    <div class="contact-anim"></div>
+  </section>
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <h3>Keranjang Belanja</h3>
+      <ul id="cartItems"></ul>
+      <button id="closeCart">Tutup</button>
+    </div>
+  </div>
+  <a href="https://wa.me/6281234567890?text=Halo%20Toko%20Seru" target="_blank" class="wa-chat">
+    <span class="material-icons">chat</span>
+    Chat WhatsApp
+  </a>
+  <footer class="footer">
+    <p>© 2025 Toko Seru. Dibuat dengan ❤️, parallax, dan animasi super keren.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
